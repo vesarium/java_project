@@ -4,7 +4,7 @@ public class MyMethodsBundle {
 	
 	float myfloat = 23.45f;
 	double mydbl = 0.03434d;
-	char aletter = 'A';
+	char mychar = 'A';
 	boolean mybool = true; 
 	String mystring = "my stringgg";
 	
@@ -14,27 +14,29 @@ public class MyMethodsBundle {
 
 	}
 	
-	public static float myFloat() {
-		
-		
+	public float myFloat() {
+		float res = myfloat;
+		return res;
 	}
 	
-	public static double myDouble() {
-		
+	public double myDouble() {
+		double res = myfloat;
+		return res;
 	}
 	
-	public static char myChar() {
-		
+	public char myChar() {
+		char res = mychar;
+		return res;
 	}
 	
-	public static boolean myBool() {
-		
-		
+	public boolean myBool() {
+		boolean res = mybool;
+		return res;		
 	}
 	
-	public static String myString() {
-		
-		
+	public String myString() {
+		String res = mystring;
+		return res;		
 	}
 
 
