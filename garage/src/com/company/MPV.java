@@ -1,6 +1,6 @@
 package com.company;
 
-public class MPV extends Car{
+public class MPV extends Vehicle{
     int bootVolume;
     boolean towBar;
 
@@ -23,9 +23,8 @@ public class MPV extends Car{
             System.out.println("Wow, going with tents today!");
         }
     }
-
-    public MPV(double engineSize, int enginePower, int seatsAmount, int bootVolume, boolean towBar) {
-        super(engineSize, enginePower, seatsAmount);
+    public MPV(String bodyType, double engineSize, int enginePower, int seatsAmount, int fuelLeft, int bootVolume, boolean towBar) {
+        super(bodyType, engineSize, enginePower, seatsAmount, fuelLeft);
         this.bootVolume = bootVolume;
         this.towBar = towBar;
     }

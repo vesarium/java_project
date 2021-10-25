@@ -1,7 +1,16 @@
 package com.company;
 
-public class Car {
+public class Vehicle {
 
+    public String getBodyType() {
+        return bodyType;
+    }
+
+    public void setBodyType(String bodyType) {
+        this.bodyType = bodyType;
+    }
+
+    private String bodyType;
     private double engineSize;
     private int enginePower;
     private int seatsAmount;
@@ -46,12 +55,16 @@ public class Car {
         return res;
     }
 
-    public Car(double engineSize, int enginePower, int seatsAmount) {
+    public int fixVehicle(){
+        return seatsAmount*500;
+    }
+
+    public Vehicle(String bodyType, double engineSize, int enginePower, int seatsAmount, int fuelLeft) {
         super();
+        this.bodyType = bodyType;
         this.engineSize = engineSize;
         this.enginePower = enginePower;
         this.seatsAmount = seatsAmount;
-        this.fuelLeft = 20;
+        this.fuelLeft = fuelLeft;
     }
-
 }

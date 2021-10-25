@@ -1,6 +1,6 @@
 package com.company;
 
-public class Coupe extends Car{
+public class Coupe extends Vehicle{
     int topSpeed;
     boolean creditCardholder;
 
@@ -20,8 +20,8 @@ public class Coupe extends Car{
         this.creditCardholder = creditCardholder;
     }
 
-    public Coupe(double engineSize, int enginePower, int seatsAmount, int topSpeed, boolean creditCardholder) {
-        super(engineSize, enginePower, seatsAmount);
+    public Coupe(String bodyType, double engineSize, int enginePower, int seatsAmount, int fuelLeft, int topSpeed, boolean creditCardholder) {
+        super(bodyType, engineSize, enginePower, seatsAmount, fuelLeft);
         this.topSpeed = topSpeed;
         this.creditCardholder = creditCardholder;
     }

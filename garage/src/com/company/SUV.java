@@ -1,17 +1,16 @@
 package com.company;
 
-public class SUV extends Car{
+public class SUV extends Vehicle{
 
     private int winchPower;
-    private final String bodyType;
-
+    private String subType;
 
     public int getWinchPower() {
         return winchPower;
     }
 
     public String getBodyType() {
-        return bodyType;
+        return subType;
     }
 
     public void setWinchPower(int winchPower) {
@@ -22,10 +21,9 @@ public class SUV extends Car{
         System.out.println("winch...winch...winch...");
     }
 
-    public SUV(double engineSize, int enginePower, int seatsAmount, int winchPower, String bodyType) {
-        super(engineSize, enginePower, seatsAmount);
+    public SUV(String bodyType, double engineSize, int enginePower, int seatsAmount, int fuelLeft, int winchPower, String subType) {
+        super(bodyType, engineSize, enginePower, seatsAmount, fuelLeft);
         this.winchPower = winchPower;
-        this.bodyType = bodyType;
+        this.subType = subType;
     }
-
 }
