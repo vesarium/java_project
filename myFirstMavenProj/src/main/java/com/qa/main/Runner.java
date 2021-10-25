@@ -1,7 +1,6 @@
-package mainTests;
-import org.junit.Test;
+package com.qa.main;
 
-public class MyMVNClass {
+public class Runner {
     public static void main(String[] args) {
         System.out.println("Heylow");
     }
