@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5f18b2d-d5cc-4110-8ab3-5bddcdd6ebcc" name="Changes" comment="MapsAndSets">
+      <change afterPath="$PROJECT_DIR$/src/com/company/lambda/Lambda.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../JunitVendorMachine" beforeDir="false" afterPath="$PROJECT_DIR$/../JunitVendorMachine" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../garage/src/test/java/com.company/GarageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../garage/src/test/java/com.company/GarageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../maven-demo-repo" beforeDir="false" afterPath="$PROJECT_DIR$/../maven-demo-repo" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +88,20 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
-  <component name="RunManager" selected="Application.Sets">
+  <component name="RunManager" selected="Application.Lambda">
+    <configuration name="Lambda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.lambda.Lambda" />
+      <module name="untitled104" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.lambda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="untitled104" />
@@ -111,12 +125,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="lambda" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.lambda.lambda" />
+      <module name="untitled104" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.lambda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Sets" />
+      <item itemvalue="Application.lambda" />
+      <item itemvalue="Application.Lambda" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Lambda" />
+        <item itemvalue="Application.lambda" />
         <item itemvalue="Application.Sets" />
         <item itemvalue="Application.Main" />
       </list>
@@ -130,7 +161,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1635325941141</updated>
-      <workItem from="1635325946857" duration="2505000" />
+      <workItem from="1635325946857" duration="5926000" />
     </task>
     <task id="LOCAL-00001" summary="MapsAndSets">
       <created>1635327905412</created>
