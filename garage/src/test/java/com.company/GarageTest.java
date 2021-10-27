@@ -10,13 +10,18 @@ import static org.junit.jupiter.api.Assertions.*;
 class GarageTest {
 
     private Vehicle vehicle;
-    private static Garage myGarage;
+    private Garage myGarage;
 
     @BeforeAll
-    public static void setup(){
+    private void setup(){
         System.out.println("setupp");
         myGarage = new Garage();
         Vehicle vehicle = new Vehicle("coupe", 2.5, 250, 4, 20);
+    }
+
+    @AfterEach
+    public void resetGarage(){
+        //myGarage.clearGarage();
     }
 
 
@@ -24,18 +29,22 @@ class GarageTest {
     void addVehicle() {
         myGarage.addVehicle(vehicle);
         Assert.assertEquals(1, myGarage.countVehicles());
+        myGarage.clearGarage();
     }
 
     @Test
     void getVehicle() {
         myGarage.addVehicle(vehicle);
+        System.out.println(myGarage.getVehicle(0));
         Assert.assertTrue(myGarage.getVehicle(0) instanceof Vehicle);
+        myGarage.clearGarage();
     }
 
     @Test
     void countVehicles() {
         myGarage.addVehicle(vehicle);
         Assert.assertEquals(1, myGarage.countVehicles());
+        myGarage.clearGarage();
     }
 
     @Test
@@ -43,6 +52,7 @@ class GarageTest {
         myGarage.addVehicle(vehicle);
         myGarage.removeVehicle(0);
         Assert.assertEquals(0, myGarage.countVehicles());
+        myGarage.clearGarage();
     }
 
     @Test
@@ -52,6 +62,10 @@ class GarageTest {
 
     @Test
     void clearGarage() {
+        myGarage.addVehicle(vehicle);
+        myGarage.addVehicle(vehicle);
+        myGarage.clearGarage();
+        Assert.assertEquals(0, myGarage.countVehicles());
     }
 
     @AfterAll
