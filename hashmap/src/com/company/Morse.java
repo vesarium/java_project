@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Maps {
+public class Morse {
 
     public static void main(String[] args) {
 
@@ -53,50 +53,49 @@ public class Maps {
        myHashText.put('9', "----.");
        myHashText.put('0', "-----");
 
-        myHashMorse.put(".-", "a");
-        myHashMorse.put("-...", "b");
-        myHashMorse.put("-.-", "c");
-        myHashMorse.put("-..", "d");
-        myHashMorse.put(".", "e");
-        myHashMorse.put("..-.", "f");
-        myHashMorse.put("--.", "g");
-        myHashMorse.put("....", "h");
-        myHashMorse.put("..", "i");
-        myHashMorse.put(".---", "j");
-        myHashMorse.put("-.", "k");
-        myHashMorse.put(".-..", "l");
-        myHashMorse.put("--", "m");
-        myHashMorse.put("-.", "n");
-        myHashMorse.put("---", "o");
-        myHashMorse.put(".--.", "p");
-        myHashMorse.put("--.-", "q");
-        myHashMorse.put(".-.", "r");
-        myHashMorse.put("...", "s");
-        myHashMorse.put("-", "t");
-        myHashMorse.put("..-", "u");
-        myHashMorse.put("...-", "v");
-        myHashMorse.put(".--", "w");
-        myHashMorse.put("-..-", "x");
-        myHashMorse.put("-.--", "y");
-        myHashMorse.put("--..", "z");
-        myHashMorse.put(".----", "1");
-        myHashMorse.put("..---", "2");
-        myHashMorse.put("...--", "3");
-        myHashMorse.put("....-", "4");
-        myHashMorse.put(".....", "5");
-        myHashMorse.put("-....", "6");
-        myHashMorse.put("--...", "7");
-        myHashMorse.put("---..", "8");
-        myHashMorse.put("----.", "9");
-        myHashMorse.put("-----", "10");
-        myHashMorse.put("/", " ");
+       myHashMorse.put(".-", "a");
+       myHashMorse.put("-...", "b");
+       myHashMorse.put("-.-", "c");
+       myHashMorse.put("-..", "d");
+       myHashMorse.put(".", "e");
+       myHashMorse.put("..-.", "f");
+       myHashMorse.put("--.", "g");
+       myHashMorse.put("....", "h");
+       myHashMorse.put("..", "i");
+       myHashMorse.put(".---", "j");
+       myHashMorse.put("-.", "k");
+       myHashMorse.put(".-..", "l");
+       myHashMorse.put("--", "m");
+       myHashMorse.put("-.", "n");
+       myHashMorse.put("---", "o");
+       myHashMorse.put(".--.", "p");
+       myHashMorse.put("--.-", "q");
+       myHashMorse.put(".-.", "r");
+       myHashMorse.put("...", "s");
+       myHashMorse.put("-", "t");
+       myHashMorse.put("..-", "u");
+       myHashMorse.put("...-", "v");
+       myHashMorse.put(".--", "w");
+       myHashMorse.put("-..-", "x");
+       myHashMorse.put("-.--", "y");
+       myHashMorse.put("--..", "z");
+       myHashMorse.put(".----", "1");
+       myHashMorse.put("..---", "2");
+       myHashMorse.put("...--", "3");
+       myHashMorse.put("....-", "4");
+       myHashMorse.put(".....", "5");
+       myHashMorse.put("-....", "6");
+       myHashMorse.put("--...", "7");
+       myHashMorse.put("---..", "8");
+       myHashMorse.put("----.", "9");
+       myHashMorse.put("-----", "10");
+       myHashMorse.put("/", " ");
 
     }
     public void printMorseStream(String str) {
         List<String> myList = Arrays.stream(str.split(" "))
                 .map(n -> myHashMorse.get(n))
                 .collect(Collectors.toList());
-        System.out.println("Translation is: ");
         myList.forEach(System.out::print);
         System.out.println("");
     }
@@ -117,17 +116,20 @@ public class Maps {
         for (char ch: str.toCharArray()
         ) {
             if(ch == ' '){
-                System.out.println("/");
+
+                System.out.print(" /");
             }else if(ch == '.'){
                 System.out.println("dot here");
             }else if(ch == ','){
                 System.out.println("comma here");
             }else {
                 if(myHashText.get(ch)!=null){
-                    System.out.println(myHashText.get(ch));
+                    System.out.print(" ");
+                    System.out.print(myHashText.get(ch));
                 }
             }
         }
+        System.out.println("");
     }
 
 }

@@ -1,16 +1,20 @@
 package com.company;
 
 
+import java.util.Locale;
+
 public class Main {
 
     public static void main(String[] args) {
-        Maps maps = new Maps();
-        maps.fillHash();
+        Morse morse = new Morse();
+        morse.fillHash();
 
-        maps.printText("java is null");
-        maps.printMorseStream(".--- .- ...- .- / .. ... / -.- --- --- .-.. / --- -.-");
-        maps.printMorseNoStream(".--- .- ...- .- / .. ... / -.- --- --- .-.. / --- -.-");
+        morse.printText(("No water on Mars").toLowerCase());
+        System.out.println("Translation is: ");
+        System.out.print("Stream : ");
+        morse.printMorseStream(".--- .- ...- .- / .. ... / -.- --- --- .-.. / --- -.-");
+        System.out.print("No Stream : ");
+        morse.printMorseNoStream(".... . .-.. .-.. --- / .-- --- .-. .-.. -..");
 
-	// write your code here
     }
 }
