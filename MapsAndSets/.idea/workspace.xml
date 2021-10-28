@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5f18b2d-d5cc-4110-8ab3-5bddcdd6ebcc" name="Changes" comment="MapsAndSets. Lambda functions">
-      <change afterPath="$PROJECT_DIR$/src/com/company/mystream/MyStream.java" afterDir="false" />
+    <list default="true" id="f5f18b2d-d5cc-4110-8ab3-5bddcdd6ebcc" name="Changes" comment="MapsAndSets. Lambda functions. Stream()">
       <change beforePath="$PROJECT_DIR$/../JunitVendorMachine" beforeDir="false" afterPath="$PROJECT_DIR$/../JunitVendorMachine" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/mystream/MyStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/mystream/MyStream.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../maven-demo-repo" beforeDir="false" afterPath="$PROJECT_DIR$/../maven-demo-repo" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -184,7 +183,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1635325941141</updated>
-      <workItem from="1635325946857" duration="13145000" />
+      <workItem from="1635325946857" duration="13403000" />
     </task>
     <task id="LOCAL-00001" summary="MapsAndSets">
       <created>1635327905412</created>
@@ -200,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635336771236</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="MapsAndSets. Lambda functions. Stream()">
+      <created>1635350750605</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1635350750606</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +226,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="MapsAndSets" />
     <MESSAGE value="MapsAndSets. Lambda functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="MapsAndSets. Lambda functions" />
+    <MESSAGE value="MapsAndSets. Lambda functions. Stream()" />
+    <option name="LAST_COMMIT_MESSAGE" value="MapsAndSets. Lambda functions. Stream()" />
   </component>
 </project>

@@ -39,21 +39,17 @@ public class MyStream {
         evenNumbers.forEach(System.out::print);
         System.out.println("");
         System.out.println("--------");
-
         // Summ of all numbers
         int sumResult = numbers.stream()
                 .reduce((a,b)-> a + b)
                 .get();
         System.out.println("Summ is: " + sumResult);
-
         //MIN and MAX numbers
         System.out.println("Minimum number in List: " + numbers.stream().min((num1, num2)->num1.compareTo(num2)).get());
         System.out.println("Maximum number in List: " + numbers.stream().max((num1, num2)->num1.compareTo(num2)).get());
 
         int minNumSquare = numbers.stream().map(a -> a*a).filter(a -> a % 2 != 0).min((num1, num2)->num1.compareTo(num2)).get();
         System.out.println(minNumSquare);
-
-
 
     }
 }
