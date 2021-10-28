@@ -52,6 +52,9 @@ public class Morse {
        myHashText.put('8', "---..");
        myHashText.put('9', "----.");
        myHashText.put('0', "-----");
+       myHashText.put(' ', "/");
+
+
 
        myHashMorse.put(".-", "a");
        myHashMorse.put("-...", "b");
@@ -90,8 +93,8 @@ public class Morse {
        myHashMorse.put("----.", "9");
        myHashMorse.put("-----", "10");
        myHashMorse.put("/", " ");
-
     }
+
     public void printMorseStream(String str) {
         List<String> myList = Arrays.stream(str.split(" "))
                 .map(n -> myHashMorse.get(n))
@@ -101,7 +104,6 @@ public class Morse {
     }
 
     public void printMorseNoStream(String str){
-
         String res = new String();
         String[] myArr = str.split(" ");
         for (int i = 0; i < myArr.length; i++) {
@@ -109,27 +111,22 @@ public class Morse {
             res += myHashMorse.get(myArr[i]);
         }
         System.out.println(res);
-
     }
 
     public void printText(String str) {
         for (char ch: str.toCharArray()
         ) {
-            if(ch == ' '){
-
-                System.out.print(" /");
-            }else if(ch == '.'){
+            if(ch == '.'){
                 System.out.println("dot here");
             }else if(ch == ','){
                 System.out.println("comma here");
             }else {
                 if(myHashText.get(ch)!=null){
-                    System.out.print(" ");
                     System.out.print(myHashText.get(ch));
                 }
             }
+            System.out.print(" ");
         }
         System.out.println("");
     }
-
 }
