@@ -1,4 +1,4 @@
-package com.company;
+package com.company.morse;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -9,9 +9,6 @@ import java.util.stream.Collectors;
 
 public class Morse {
 
-    public static void main(String[] args) {
-
-    }
     public HashMap<Character, String> myHashText =  new HashMap<Character, String>();
     public HashMap<String, String> myHashMorse =  new HashMap<String, String>();
 
@@ -53,8 +50,6 @@ public class Morse {
        myHashText.put('9', "----.");
        myHashText.put('0', "-----");
        myHashText.put(' ', "/");
-
-
 
        myHashMorse.put(".-", "a");
        myHashMorse.put("-...", "b");
